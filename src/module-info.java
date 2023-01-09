@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author param
+ *
+ */
+module hangman {
+}
