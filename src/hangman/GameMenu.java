@@ -3,7 +3,7 @@ package hangman;
 import java.util.Scanner;
 
 public class GameMenu {
-
+	//Print menu to avoid repeating code.
 	public static void printWelcome() {
 		System.out.println("================ \n");
 		System.out.println("=== HANG MAN === \n");
@@ -11,6 +11,7 @@ public class GameMenu {
 		System.out.println("");
 
 	}
+	//Prints the menu and returns the boolean.
 	public static Boolean playAgainMenu() {
 		Scanner s = new Scanner(System.in);
 		Boolean playAgain = true;
@@ -34,6 +35,7 @@ public class GameMenu {
 		
 	}
 	public static String[] printHiddenWord(char[] hiddenWord) {
+		//Prints the hidden word to display, this converts from arraylist to string array so we can print to screen. 
 		String[] toShow = new String[hiddenWord.length];
 		for (int i = 0; i < hiddenWord.length; i++) {
 			toShow[i] = String.valueOf(hiddenWord[i]);
